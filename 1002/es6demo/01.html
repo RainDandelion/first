@@ -1,0 +1,42 @@
+<script>
+
+    const pi = 3.1564156;
+
+    let [a,b,c] = [1,2,3];
+
+    console.log(a,b,c)
+
+    let user = {name: "li",age: 20}
+    //传统方法
+    let name1 = user.name;
+    let age1 = user.age
+    console.log(name1,age1)
+
+    //es6
+    let {name,age } = user
+    console.log(name,age)
+
+
+    let hello =` hello,
+        weda`;
+    console.log(hello)
+
+    let test = "ewq";
+    let nda = "eq";
+
+    let info = `test ${test},${nda}`;
+
+    console.log(info)
+
+    function f1(){
+        return "hello 1"
+    }
+
+    let str = `demo,${f1()}`
+    console.log(str)
+
+    //声明对象
+
+
+
+</script>

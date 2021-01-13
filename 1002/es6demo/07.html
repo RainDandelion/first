@@ -1,0 +1,31 @@
+<script>
+
+    const name = "name";
+    const age = "18";
+
+    //传统方式
+    let p1 = {name: name,age:age};
+    console.log(p1);
+
+    //es6
+    let p2 = {name,age};
+    console.log(p2)
+
+    let person1 = {
+        sayhi:function(){
+            console.log("h1")
+        }
+    }
+    //调用
+    person1.sayhi;
+
+    let person2 = {
+        sayhi(){
+            console.log("h2")
+        }
+    }
+
+     //调用
+     person2.sayhi;
+
+</script>

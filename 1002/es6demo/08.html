@@ -1,0 +1,16 @@
+<script>
+    let person = {"name":"lucy",age:"20"};
+    //对象复制
+    let someone = {...person};
+
+    console.log(someone)
+
+    //合并对象
+    let age = {age: 15};
+    let name = {name: "an2"};
+
+    let person2 = {...name,...age}
+
+
+    console.log(person2)
+</script>

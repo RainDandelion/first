@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <form action="..."  @submit.prevent="onsubmit()">
+            <input type="text" name="username" v-model="user.name">
+            <input type="submit">
+        </form>
+
+        <h1 v-if="user.name == 'eqw'">v-if</h1>
+        <h1 v-else>v-else</h1>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                user:{
+                    name: "eqw",
+
+                }
+            },
+            methods:{
+                onsubmit(){
+                    if(this.user.name){
+                        alert("提交表单")
+                    }else{
+                        alert("无值")
+                    }
+                }
+            },
+            created(){
+                debugger //调试用
+                //页面渲染之前执行
+                console.log('created')
+            },
+            mounted(){
+                //页面渲染之后执行
+                console.log('mounted')
+            }
+        })
+    </script>
+</body>
+
+</html>

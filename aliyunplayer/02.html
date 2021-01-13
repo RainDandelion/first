@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css" />
+     <script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div  class="prism-player" id="J_prismPlayer"></div>
+    <script>
+        var player = new Aliplayer({
+        id: 'J_prismPlayer',
+        width: '100%',
+        autoplay: false,
+        //播放方式二：点播用户推荐
+        vid : '3e14074830f34f5984834eed89dee26c',
+        playauth : 'eyJTZWN1cml0eVRva2VuIjoiQ0FJUzN3SjFxNkZ0NUIyeWZTaklyNWJpSS83K280cEovNCs5TkV6N2pHRXlPOXRFdUtyZGxUejJJSGhKZVhOdkJPMGV0ZjQrbVdCWTdQY1lsck1xRjhZZkdoeWJNcEF0dHNrSHFGUDZKcExGc3QySjZyOEpqc1ZGeGNzdm9saXBzdlhKYXNEVkVma3VFNVhFTWlJNS8wMGU2TC8rY2lyWVhEN0JHSmFWaUpsaFE4MEtWdzJqRjFSdkQ4dFhJUTBRazYxOUszemRaOW1nTGlidWkzdnhDa1J2MkhCaWptOHR4cW1qL015UTV4MzFpMXYweStCM3dZSHRPY3FjYThCOU1ZMVdUc3Uxdm9oemFyR1Q2Q3BaK2psTStxQVU2cWxZNG1YcnM5cUhFa0ZOd0JpWFNaMjJsT2RpTndoa2ZLTTNOcmRacGZ6bjc1MUN0L2ZVaXA3OHhtUW1YNGdYY1Z5R0dOLzZuNU9aUXJ6emI0WmhKZWVsQVJtWGpJRFRiS3VTbWhnL2ZIY1dPRGxOZjljY01YSnFBWFF1TUdxQ2QvTDlwdzJYT2x6NUd2WFZnUHRuaTRBSjVsSHA3TWVNR1YrRGVMeVF5aDBFSWFVN2EwNDQvNWVUWWFwazFNVWFnQUZqOU53TldmZmg5TDZSSFg2OEFuSUtub1FaM1VRMlBpcld5WCtxS3RPSGk4bFVjYTZwendFTVB2U1A1RGpqN1lCTkU3cE9aSlF1KzNVVmJUdXJQMGIzRm1TTHBkSFp0WWpGVEVwazVZd1JXSllhd3VLdVgxN2tUNVNkQlFPRE13SjhDK2VqVXBMU296NlVZWjNpb1Y0TmxZYkdHUmp5NUlpU3FCdHdFSVd4Vmc9PSIsIkF1dGhJbmZvIjoie1wiQ0lcIjpcIkZlengyV2xUQ1NCN05Pb1JqOGVPNlpqSk1FdmhIYUgrRGNTczZHc1llUVFUSlcyeXd4OXVmQkxGZGQ2RmFNV2tcXHJcXG5cIixcIkNhbGxlclwiOlwiVlBsemdoaC8ydVFRNWhUeE5Da1c1OW1NcFo1Vk9JTVllenNjYjIvREREVT1cXHJcXG5cIixcIkV4cGlyZVRpbWVcIjpcIjIwMjAtMDgtMjNUMDg6MTY6NDlaXCIsXCJNZWRpYUlkXCI6XCIzZTE0MDc0ODMwZjM0ZjU5ODQ4MzRlZWQ4OWRlZTI2Y1wiLFwiU2lnbmF0dXJlXCI6XCJHbSt6K0NjOFFEek4xL1pBVzViVlRBeTY2Tlk9XCJ9IiwiVmlkZW9NZXRhIjp7IlN0YXR1cyI6Ik5vcm1hbCIsIlZpZGVvSWQiOiIzZTE0MDc0ODMwZjM0ZjU5ODQ4MzRlZWQ4OWRlZTI2YyIsIlRpdGxlIjoiV2hhdCBJZiBJIFdhbnQgdG8gTW92ZSBGYXN0ZXIiLCJDb3ZlclVSTCI6Imh0dHA6Ly9vdXRpbi04ZTQyNjVlZWRkNWIxMWVhODM3NjAwMTYzZTFjMzVkNS5vc3MtY24tc2hhbmdoYWkuYWxpeXVuY3MuY29tLzNlMTQwNzQ4MzBmMzRmNTk4NDgzNGVlZDg5ZGVlMjZjL3NuYXBzaG90cy8wODAzODQ5NGVhODg0MjgzYjg4YmZiOGQ4ZjBhNWNiZC0wMDAwMS5qcGc/RXhwaXJlcz0xNTk4MTc0MTA5Jk9TU0FjY2Vzc0tleUlkPUxUQUl4U2FPZkV6Q25CT2omU2lnbmF0dXJlPVZucyUyQldkcFo4VWVuVWttUjNkYnFsVkpNTGRRJTNEIiwiRHVyYXRpb24iOjE2LjI3Njd9LCJBY2Nlc3NLZXlJZCI6IlNUUy5OVVdoREpOVWhITVY2akpoYWc3VGhXb3Z3IiwiQWNjZXNzS2V5U2VjcmV0IjoiQWpBWkRnWjF1Q2Q5WDVDd3lzNExyY3pNa1M3R0ZwUXZjRkVqaUV2bWRLRW8iLCJSZWdpb24iOiJjbi1zaGFuZ2hhaSIsIkN1c3RvbWVySWQiOjE0MTI3ODc3MzUwNTgxODN9',
+
+        cover: 'http://liveroom-img.oss-cn-qingdao.aliyuncs.com/logo.png',
+        encryptType:1, //当播放私有加密流时需要设置。
+        },function(player){
+            console.log('播放器创建好了。')
+       });
+    </script>
+    
+</body>
+</html>
